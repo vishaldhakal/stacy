@@ -35,7 +35,7 @@ const PromoSection = () => {
                 </p>
               </div>
               <p className="mt-8 sm:mt-12 text-sm sm:text-base text-gray-900 lg:mt-20">
-                Want to see Stacy in action?
+                Have a question?
               </p>
               <Link
                 href="#"

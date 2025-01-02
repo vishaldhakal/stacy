@@ -16,7 +16,7 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/resale/ontario", label: "New Listings" },
+    { href: "/resale/ontario", label: "London Listings" },
     { href: "#", label: "New Home Buyers" },
     { href: "#", label: "About" },
     { href: "/appointment", label: "Contact" },
