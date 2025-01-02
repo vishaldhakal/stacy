@@ -11,8 +11,8 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { href: "/resale/ontario", label: "Home" },
-    { href: "#", label: "New Listings" },
+    { href: "/", label: "Home" },
+    { href: "/resale/ontario", label: "New Listings" },
     { href: "#", label: "New Home Buyers" },
     { href: "#", label: "About" },
     { href: "#", label: "Contact" },

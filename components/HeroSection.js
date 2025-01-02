@@ -3,14 +3,14 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="relative">
-      <div className="flex flex-col-reverse lg:flex-row items-center">
+    <section className="relative container mx-auto">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-between">
         <div className="w-full lg:w-1/2 px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 text-center lg:text-left">
-          <div className="max-w-xl mx-auto lg:mx-0">
+          <div className="lg:max-w-2xl">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
               Hey 👋 I am <br className="block sm:hidden" /> Stacy Anastasiadis
             </h1>
-            <p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
+            <p className="mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
               With over 15 years experience in the real estate industry, I am
               passionate about working with my clients by comprehending their
               needs and giving them the right advice.
@@ -34,11 +34,11 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative lg:w-1/2 flex justify-center lg:justify-end">
           <Image
-            className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
+            className="w-full lg:w-auto h-auto max-w-md lg:max-w-lg xl:max-w-xl"
             src="/stacy.png"
-            alt="Jenny Carter - Professional Portrait"
+            alt="Stacy Anastasiadis - Professional Portrait"
             width={600}
             height={800}
             priority
