@@ -14,7 +14,7 @@ const HeroSection = () => {
               Sales Representative : Sutton Group Select Realty Inc.
             </p>
             <p className="mt-3 text-xl leading-relaxed text-black md:mt-8 max-w-[510px]">
-              With over 15 years experience in the real estate industry, I am
+              With over 20+ years experience in the real estate industry, I am
               passionate about working with my clients by comprehending their
               needs and giving them the right advice.
             </p>

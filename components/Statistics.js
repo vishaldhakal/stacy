@@ -9,7 +9,7 @@ const stats = [
     description: "Successfully closed deals",
   },
   {
-    number: 15,
+    number: 20,
     suffix: "+",
     label: "Years Experience",
     description: "In London real estate",

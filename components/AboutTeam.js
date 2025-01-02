@@ -29,7 +29,7 @@ const AboutTeam = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-4 items-start max-w-5xl mx-auto">
           {/* Stacy's Section */}
           <div className="flex flex-col items-center text-center bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300">
             <h3 className="text-xl sm:text-2xl font-semibold mb-1 text-gray-900">
@@ -38,7 +38,7 @@ const AboutTeam = () => {
             <p className="text-sm text-black mb-6 font-medium">
               Real Estate Agent | 20+ Years Experience
             </p>
-            <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+            <p className="text-sm sm:text-base text-black leading-relaxed">
               With over 20 years in real estate serving London and surrounding
               territories, I specialize in residential sales, commercial
               investments, and vacant land transactions. My vast experience
@@ -55,7 +55,7 @@ const AboutTeam = () => {
             <p className="text-sm text-black mb-6 mt-0 font-medium pb-0 leading-none">
               Licensed Realtor | Former Banking Professional
             </p>
-            <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+            <p className="text-sm sm:text-base text-black leading-relaxed">
               After 25+ years in banking specializing in mortgage financing and
               customer relations, I joined Stacy as his assistant and recently
               became a licensed Realtor. My background in financial services
