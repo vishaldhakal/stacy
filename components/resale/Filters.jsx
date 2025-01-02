@@ -187,7 +187,7 @@ const Filters = ({ filterState, setFilterState, fetchFilteredData }) => {
   return (
     <>
       <div
-        className={`justify-center sm:justify-start gap-2 gap-md-3 mt-2 sm:my-2 flex flex-wrap bg-white overflow-visible${
+        className={`justify-center sm:justify-start gap-2 gap-md-3 mt-2 sm:my-2 flex flex-wrap bg-white overflow-visible mb-3 ${
           navbar
             ? `filter__scrolled mt-4 pb-2 container-fluid`
             : `top-[0px] items-center`
@@ -387,7 +387,7 @@ const CustomDropdown = ({
       >
         <span className="truncate">
           {Object.values(houseType).find((obj) => obj.value == selectedValues)
-            ?.name || "House Type"}
+            ?.name || "Bed"}
         </span>
         <FaChevronDown
           size={10}

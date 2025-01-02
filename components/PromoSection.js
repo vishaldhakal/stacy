@@ -31,7 +31,7 @@ const PromoSection = () => {
                 className="inline-flex items-center justify-center px-8 py-4 mt-4 text-base font-semibold text-white transition-all duration-200 bg-black rounded-md hover:opacity-80 focus:opacity-80"
                 role="button"
               >
-                Book a Consultation
+                Book an Appointment
               </Link>
             </div>
 

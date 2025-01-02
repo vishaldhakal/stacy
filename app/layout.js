@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import NextTopLoader from "nextjs-toploader";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,14 @@ export default function RootLayout({ children }) {
         <NextTopLoader color="#000" />
         <Navbar />
         {children}
+        <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 md:hidden">
+          <Link
+            href="/appointment"
+            className="inline-flex items-center justify-center px-4 py-3 text-xs font-medium text-white bg-black rounded-full shadow-lg hover:bg-gray-900 transition-all duration-200 hover:scale-105"
+          >
+            Book an Appointment
+          </Link>
+        </div>
         <Footer />
       </body>
     </html>

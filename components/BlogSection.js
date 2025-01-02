@@ -36,7 +36,7 @@ const blogPosts = [
 
 const BlogCard = ({ post }) => {
   return (
-    <div className="flex flex-col bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow mx-auto w-full max-w-xs lg:max-w-none">
+    <div className="flex flex-col bg-white rounded-lg shadow-2xl overflow-hidden hover:shadow-md transition-shadow mx-auto w-full max-w-xs lg:max-w-none">
       <div className="relative h-40 sm:h-48">
         <Image
           src={post.image}
@@ -45,7 +45,7 @@ const BlogCard = ({ post }) => {
           className="object-cover w-full h-full"
         />
         <div className="absolute top-4 left-4">
-          <span className="inline-block bg-amber-100 text-amber-800 text-xs px-3 py-1 rounded-full">
+          <span className="inline-block bg-amber-100 text-black text-xs px-3 py-1 rounded-full">
             {post.category}
           </span>
         </div>
@@ -59,12 +59,12 @@ const BlogCard = ({ post }) => {
         <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
           {post.title}
         </h3>
-        <p className="text-sm sm:text-base text-gray-600 mb-4 line-clamp-2">
+        <p className="text-sm sm:text-base text-gray-600 mb-4 line-clamp-2 text-start">
           {post.excerpt}
         </p>
         <Link
           href={`/blog/${post.id}`}
-          className="inline-flex items-center text-amber-600 hover:text-amber-700"
+          className="inline-flex items-center text-black hover:text-black"
         >
           Read More
           <svg
@@ -109,7 +109,7 @@ const BlogSection = () => {
         <div className="text-center mt-12">
           <Link
             href="/blog"
-            className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-amber-500 rounded-md shadow-sm hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 transition-colors"
+            className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-black rounded-md shadow-sm hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition-colors"
           >
             View All Articles
           </Link>

@@ -13,7 +13,7 @@ import { getFilteredRetsData } from "@/app/_resale-api/getSalesData";
 import useDeviceView from "@/helpers/useDeviceView";
 import { isLocalStorageAvailable } from "@/helpers/checkLocalStorageAvailable";
 import { ImSpinner } from "react-icons/im";
-import HotListings from "./HotListings";
+/* import HotListings from "./HotListings"; */
 import PageSelector from "./PageSelector";
 import Image from "next/image";
 // import formatCurrency from "@/helpers/formatCurrency";
@@ -185,22 +185,22 @@ const FiltersWithSalesList = ({
     <>
       <div className="">
         <h1
-          className={`font-extrabold text-2xl text-center sm:text-left ${
+          className={`font-extrabold mb-3 text-sm md:text-3xl text-center sm:text-left ${
             isMobileView ? "pt-2" : "pt-2"
           }`}
         >
           Explore Condos, Detached, Semi-Detached, Townhouses - Buy With Stacy
         </h1>
-        <h2
-          className="text-sm mb-5 mt-1 text-center sm:text-left"
-          style={isMobileView ? { fontSize: "0.9rem" } : {}}
+        {/* <h2
+          className="text-xs font-light text-gray-600 mb-5 mt-1 text-center sm:text-left"
+          style={isMobileView ? { fontSize: "0.6rem" } : {}}
         >
           10K+ {capitalizeFirstLetter(city)}{" "}
           {capitalizeFirstLetter(requiredType) || ""} homes for{" "}
           {saleLeaseVal?.toLowerCase() == "lease" ? "Rent or Lease" : "sale"}.
           Book a showing for affordable homes with pools, finished basements,
           walkouts. Prices from $1 to $5,000,000. Open houses available.
-        </h2>
+        </h2> */}
 
         <div
           className="flex sticky top-0 z-50 bg-white items-center w-full flex-wrap overflow-visible justify-center sm:justify-normal"
@@ -215,7 +215,7 @@ const FiltersWithSalesList = ({
           </div>
         ) : salesData?.length > 0 ? (
           <>
-            {selected === 1 && <HotListings salesData={hotSales} />}
+            {/* {selected === 1 && <HotListings salesData={hotSales} />} */}
             <div
               className={`${
                 isMobileView ? "pt-1" : "pt-3"

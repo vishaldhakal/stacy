@@ -28,7 +28,7 @@ const page = async ({ params }) => {
     { label: "ON", href: null },
   ];
   return (
-    <div className="mt-10">
+    <div className="md:mt-10">
       <div className="container-fluid">
         <FiltersWithSalesList
           {...{

@@ -8,7 +8,7 @@ const buyingSteps = [
       "Understand your budget, get pre-approved for a mortgage, and learn about down payment options and first-time buyer programs.",
     icon: (
       <svg
-        className="w-6 h-6 text-amber-500"
+        className="w-6 h-6 text-black"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -28,7 +28,7 @@ const buyingSteps = [
       "Identify your must-haves, explore different neighborhoods, and view properties that match your criteria and budget.",
     icon: (
       <svg
-        className="w-6 h-6 text-amber-500"
+        className="w-6 h-6 text-black"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -48,7 +48,7 @@ const buyingSteps = [
       "Get guidance on making competitive offers, understanding purchase agreements, and navigating negotiations.",
     icon: (
       <svg
-        className="w-6 h-6 text-amber-500"
+        className="w-6 h-6 text-black"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -68,7 +68,7 @@ const buyingSteps = [
       "Learn about home inspections, finalizing your mortgage, and what to expect during the closing process.",
     icon: (
       <svg
-        className="w-6 h-6 text-amber-500"
+        className="w-6 h-6 text-black"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -101,7 +101,7 @@ const FirstTimeBuyers = () => {
                 stress-free.
               </p>
 
-              <div className="mt-8 space-y-6">
+              <div className="mt-8 space-y-6 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
                 {buyingSteps.map((step, index) => (
                   <div
                     key={index}
@@ -114,9 +114,6 @@ const FirstTimeBuyers = () => {
                       <h3 className="text-base sm:text-lg font-semibold text-gray-900">
                         {step.title}
                       </h3>
-                      <p className="mt-1 sm:mt-2 text-sm text-gray-600">
-                        {step.description}
-                      </p>
                     </div>
                   </div>
                 ))}
@@ -125,13 +122,13 @@ const FirstTimeBuyers = () => {
               <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
                   href="#"
-                  className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-amber-500 rounded-md shadow-sm hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500"
+                  className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-black rounded-md shadow-sm hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
                 >
-                  Schedule a Consultation
+                  Schedule an Appointment
                 </Link>
                 <Link
                   href="#"
-                  className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-amber-500 bg-white border border-amber-500 rounded-md shadow-sm hover:bg-amber-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500"
+                  className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-black bg-white border border-black rounded-md shadow-sm hover:bg-amber-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
                 >
                   Download Buyer's Guide
                 </Link>
@@ -149,19 +146,19 @@ const FirstTimeBuyers = () => {
                 height={400}
                 className="rounded-lg shadow-lg object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-transparent rounded-lg"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent rounded-lg"></div>
             </div>
 
             {/* Stats */}
             <div className="mt-8 grid grid-cols-2 gap-4">
               <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                <div className="text-2xl font-bold text-amber-500">80%</div>
+                <div className="text-2xl font-bold text-black">80%</div>
                 <p className="text-sm text-gray-600 mt-1">
                   Of my first-time buyers find their dream home within 3 months
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                <div className="text-2xl font-bold text-amber-500">95%</div>
+                <div className="text-2xl font-bold text-black">95%</div>
                 <p className="text-sm text-gray-600 mt-1">
                   Success rate in securing first-choice properties
                 </p>

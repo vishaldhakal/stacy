@@ -10,12 +10,16 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const handleLinkClick = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/resale/ontario", label: "New Listings" },
     { href: "#", label: "New Home Buyers" },
     { href: "#", label: "About" },
-    { href: "#", label: "Contact" },
+    { href: "/appointment", label: "Contact" },
   ];
 
   return (
@@ -92,9 +96,9 @@ const Navbar = () => {
           {/* CTA Button (Desktop) */}
           <Link
             href="#"
-            className="items-center justify-center hidden px-4 py-3 ml-10 text-base font-semibold text-black transition-all duration-200 bg-amber-400 border border-transparent rounded-md lg:inline-flex hover:bg-amber-500 focus:bg-amber-500"
+            className="items-center justify-center hidden px-4 py-3 ml-10 text-base font-semibold text-white transition-all duration-200 bg-black border border-transparent rounded-md lg:inline-flex hover:bg-black focus:bg-black"
           >
-            Book a Consultation
+            Book an Appointment
           </Link>
         </nav>
 
@@ -111,6 +115,7 @@ const Navbar = () => {
                   key={link.label}
                   href={link.href}
                   className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-amber-600 focus:text-amber-600"
+                  onClick={handleLinkClick}
                 >
                   {link.label}
                 </Link>
@@ -121,10 +126,10 @@ const Navbar = () => {
           {/* CTA Button (Mobile) */}
           <div className="px-6 mt-6">
             <Link
-              href="#"
-              className="inline-flex justify-center w-full px-4 py-3 text-base font-semibold text-black transition-all duration-200 bg-amber-400 border border-transparent rounded-md items-center hover:bg-amber-500 focus:bg-amber-500"
+              href="/appointment"
+              className="inline-flex justify-center w-full px-4 py-3 text-base font-semibold text-black transition-all duration-200 bg-black border border-transparent rounded-md items-center hover:bg-black focus:bg-black"
             >
-              Book a Consultation
+              Book an Appointment
             </Link>
           </div>
         </nav>
