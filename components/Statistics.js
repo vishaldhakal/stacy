@@ -70,10 +70,10 @@ const StatCard = ({ number, suffix, label, description }) => {
     >
       <div className="flex flex-col items-center text-center">
         <div className="flex items-baseline">
-          <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-amber-500">
+          <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-black">
             {count}
           </span>
-          <span className="text-xl sm:text-2xl font-semibold text-amber-500 ml-1">
+          <span className="text-xl sm:text-2xl font-semibold text-black ml-1">
             {suffix}
           </span>
         </div>
@@ -91,7 +91,7 @@ const Statistics = () => {
     <section className="py-8 sm:py-12 lg:py-16 my-6 md:my-16">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-2xl text-center font-bold text-gray-900 sm:text-3xl lg:text-4xl">
+          <h2 className="text-2xl text-center text-gray-900 sm:text-5xl font-extrabold">
             Proven Track Record
           </h2>
           <p className="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
