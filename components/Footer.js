@@ -83,8 +83,8 @@ const Footer = () => {
               <p>Sales Representative</p>
               <p>Sutton Group</p>
               <p>London, Ontario</p>
-              <p>+1 (519) 933-7344</p>
-              <p>stacy@sutton.com</p>
+              <p>519 933-7344</p>
+              <p>stacyanast@yahoo.ca</p>
             </div>
           </div>
 
@@ -156,7 +156,7 @@ const Footer = () => {
               ))}
             </div>
             <div className="text-sm text-black">
-              © {currentYear} Stacy Anastasiadis. All rights reserved.
+              © {currentYear} Stacy and Louise Realty Team. All rights reserved.
             </div>
           </div>
         </div>
