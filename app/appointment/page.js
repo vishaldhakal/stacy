@@ -174,7 +174,7 @@ const AppointmentPage = () => {
                 onChange={handleChange}
                 rows={4}
                 className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black focus:border-transparent text-center"
-                placeholder="Tell us about your real estate goals..."
+                placeholder="Please provide any information or questions you may have."
               />
             </div>
 
