@@ -20,6 +20,14 @@ export default function Home() {
       <BlogSection />
       <PromoSection />
       <Testimonials />
+      <p className="text-center text-black text-sm md:text-2xl max-w-[350px] md:max-w-4xl mx-auto mt-20">
+        Thank you for visiting! We’re Stacy and Louise, a husband-and-wife real
+        estate team. With over 20 years of experience, Stacy specializes in
+        residential, commercial, and land transactions, while Louise brings
+        expertise in mortgage financing and customer care. Together, we’re here
+        to make your real estate journey seamless. Reach out anytime—we’re ready
+        to help!
+      </p>
       <ContactForm />
       <div className="my-20"></div>
     </main>

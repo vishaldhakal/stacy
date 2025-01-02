@@ -74,7 +74,7 @@ const AboutTeam = () => {
           <div className="mt-10">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 text-sm sm:text-base font-medium text-white bg-black rounded-xl shadow-md hover:bg-amber-600 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition-all duration-300"
+              className="inline-flex items-center justify-center px-8 py-4 text-sm sm:text-base font-medium text-white bg-black rounded-xl shadow-md hover:bg-black hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition-all duration-300"
             >
               Book an Appointment
             </Link>
