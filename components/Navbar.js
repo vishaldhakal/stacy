@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { href: "#", label: "Home" },
+    { href: "/resale/ontario", label: "Home" },
     { href: "#", label: "New Listings" },
     { href: "#", label: "New Home Buyers" },
     { href: "#", label: "About" },
@@ -19,7 +19,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="pb-6 bg-white lg:pb-0 sticky top-0 z-50 shadow-sm">
+    <header className="pb-6 bg-white lg:pb-0 shadow-sm">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Desktop Navigation */}
         <nav className="flex items-center justify-between h-16 lg:h-20">
