@@ -53,7 +53,7 @@ const MortgageCalculator = () => {
     <section className="py-8 sm:py-12 my-6 md:my-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
+          <h2 className="text-2xl font-bold text-center text-gray-900 sm:text-3xl">
             Mortgage Calculator
           </h2>
           <p className="mt-3 text-base sm:text-lg text-gray-600">

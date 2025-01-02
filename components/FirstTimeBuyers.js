@@ -101,7 +101,7 @@ const FirstTimeBuyers = () => {
                 stress-free.
               </p>
 
-              <div className="mt-8 space-y-6 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
+              <div className="mt-8 space-y-6 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 px-4 sm:px-0 justify-center">
                 {buyingSteps.map((step, index) => (
                   <div
                     key={index}

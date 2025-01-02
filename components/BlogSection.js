@@ -91,7 +91,7 @@ const BlogSection = () => {
     <section className="py-8 sm:py-12 lg:py-16 my-6 md:my-16">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl">
+          <h2 className="text-2xl font-bold text-center text-gray-900 sm:text-3xl lg:text-4xl">
             Real Estate Insights
           </h2>
           <p className="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
