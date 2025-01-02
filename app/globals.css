@@ -8,6 +8,10 @@
   }
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   h1 {
     @apply text-xl sm:text-2xl lg:text-4xl font-bold text-center lg:text-left;

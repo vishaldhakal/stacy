@@ -3,7 +3,10 @@ import Link from "next/link";
 
 const AboutTeam = () => {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 my-6 md:my-16 bg-gradient-to-b from-amber-50/50 to-white">
+    <section
+      className="py-12 sm:py-16 lg:py-20 my-6 md:my-16 bg-gradient-to-b from-amber-50/50 to-white"
+      id="about"
+    >
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-2xl font-extrabold text-center text-gray-900 sm:text-3xl lg:text-4xl relative inline-block">

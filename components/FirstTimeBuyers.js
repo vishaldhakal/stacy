@@ -86,7 +86,10 @@ const buyingSteps = [
 
 const FirstTimeBuyers = () => {
   return (
-    <section className="py-8 sm:py-12 lg:py-16 my-6 md:my-16">
+    <section
+      className="py-8 sm:py-12 lg:py-16 my-6 md:my-16"
+      id="first-time-buyers"
+    >
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center text-center lg:text-left">
           {/* Image Column - Moved to top for mobile */}

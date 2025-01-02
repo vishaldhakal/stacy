@@ -17,8 +17,8 @@ const Navbar = () => {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/resale/ontario", label: "London Listings" },
-    { href: "#", label: "New Home Buyers" },
-    { href: "#", label: "About" },
+    { href: "/#first-time-buyers", label: "New Home Buyers" },
+    { href: "/#about", label: "About" },
     { href: "/appointment", label: "Contact" },
   ];
 
@@ -95,7 +95,7 @@ const Navbar = () => {
 
           {/* CTA Button (Desktop) */}
           <Link
-            href="#"
+            href="/appointment"
             className="items-center justify-center hidden px-4 py-3 ml-10 text-base font-semibold text-white transition-all duration-200 bg-black border border-transparent rounded-md lg:inline-flex hover:bg-black focus:bg-black"
           >
             Book an Appointment
