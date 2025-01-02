@@ -41,9 +41,9 @@ const AboutTeam = () => {
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
               With over 20 years in real estate serving London and surrounding
               territories, I specialize in residential sales, commercial
-              investments, and vacant land transactions. My vast experience in
-              all types of dealings allows me to provide valuable insights and
-              expertise to my clients.
+              investments, and vacant land transactions. My vast experience
+              allows me to provide valuable insights and expertise to my
+              clients.
             </p>
           </div>
 
