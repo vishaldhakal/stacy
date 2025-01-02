@@ -70,25 +70,25 @@ const Footer = () => {
             <div className="space-y-2 text-center md:text-left">
               <Link
                 href="/work-with-us"
-                className="block text-gray-600 hover:text-gray-900"
+                className="block text-black hover:text-gray-900"
               >
                 Work with us
               </Link>
               <Link
                 href="/blogs"
-                className="block text-gray-600 hover:text-gray-900"
+                className="block text-black hover:text-gray-900"
               >
                 Blogs
               </Link>
               <Link
                 href="/contact-us"
-                className="block text-gray-600 hover:text-gray-900"
+                className="block text-black hover:text-gray-900"
               >
                 Contact us
               </Link>
               <Link
                 href="/privacy-policy"
-                className="block text-gray-600 hover:text-gray-900"
+                className="block text-black hover:text-gray-900"
               >
                 Privacy Policy
               </Link>
@@ -106,7 +106,7 @@ const Footer = () => {
               <Link
                 key={city.name}
                 href={city.link}
-                className="text-sm text-gray-600 hover:text-gray-900 text-center"
+                className="text-sm text-black hover:text-gray-900 text-center"
               >
                 Pre construction homes in {city.name}
               </Link>
@@ -124,7 +124,7 @@ const Footer = () => {
               <Link
                 key={city.name}
                 href={city.link.replace("homes", "condos")}
-                className="text-sm text-gray-600 hover:text-gray-900 text-center"
+                className="text-sm text-black hover:text-gray-900 text-center"
               >
                 Pre construction condos in {city.name}
               </Link>

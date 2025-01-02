@@ -192,7 +192,7 @@ const FiltersWithSalesList = ({
           Explore Condos, Detached, Semi-Detached, Townhouses - Buy With Stacy
         </h1>
         {/* <h2
-          className="text-xs font-light text-gray-600 mb-5 mt-1 text-center sm:text-left"
+          className="text-xs font-light text-black mb-5 mt-1 text-center sm:text-left"
           style={isMobileView ? { fontSize: "0.6rem" } : {}}
         >
           10K+ {capitalizeFirstLetter(city)}{" "}

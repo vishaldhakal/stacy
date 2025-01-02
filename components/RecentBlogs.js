@@ -61,7 +61,7 @@ const RecentBlogs = () => {
         <h2 className="text-2xl md:text-5xl tracking-tight font-extrabold leading-[1.2] md:leading-[1.2]">
           The Homebaba Insights
         </h2>
-        <p className="text-gray-600 text-sm md:text-lg">
+        <p className="text-black text-sm md:text-lg">
           Read our latest articles and never miss out on the latest trends in
           the real estate industry
         </p>

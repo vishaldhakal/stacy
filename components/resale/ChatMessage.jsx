@@ -60,9 +60,7 @@ const ChatMessage = ({
               }`}
               onClick={() => onScrollToMessage(msg.originalMessage.id)}
             >
-              <div className={`text-[10px] mb-1 text-gray-600`}>
-                Replying to:
-              </div>
+              <div className={`text-[10px] mb-1 text-black`}>Replying to:</div>
               {msg.originalMessage.message}
             </div>
 

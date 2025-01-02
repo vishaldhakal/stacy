@@ -148,14 +148,14 @@ const Footer = () => {
                 <Link
                   key={social.label}
                   href={social.href}
-                  className="text-gray-600 hover:text-amber-600 transition-colors"
+                  className="text-black hover:text-amber-600 transition-colors"
                   aria-label={social.label}
                 >
                   {social.icon}
                 </Link>
               ))}
             </div>
-            <div className="text-sm text-gray-600">
+            <div className="text-sm text-black">
               © {currentYear} Stacy Anastasiadis. All rights reserved.
             </div>
           </div>

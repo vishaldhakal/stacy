@@ -146,11 +146,9 @@ export default function MortgageCalculator({
 
         <div className="mt-8 bg-gray-100 rounded-lg p-6 text-center">
           <h3 className="text-2xl font-bold text-gray-800 mb-2">
-            ${calculated} <span className="text-lg text-gray-600">/mo</span>
+            ${calculated} <span className="text-lg text-black">/mo</span>
           </h3>
-          <p className="text-gray-600">
-            Your Estimated Monthly Mortgage Payment
-          </p>
+          <p className="text-black">Your Estimated Monthly Mortgage Payment</p>
         </div>
 
         <div className="mt-8 flex justify-center">
@@ -261,7 +259,7 @@ export default function MortgageCalculator({
               ].map(({ term, def }) => (
                 <div key={term}>
                   <dt className="font-semibold text-gray-800">{term}</dt>
-                  <dd className="text-gray-600 mt-1">{def}</dd>
+                  <dd className="text-black mt-1">{def}</dd>
                 </div>
               ))}
             </dl>
@@ -272,7 +270,7 @@ export default function MortgageCalculator({
       <div
         className={`bg-gray-100 p-4 ${
           align === "center" ? "text-center" : ""
-        } text-sm text-gray-600`}
+        } text-sm text-black`}
       >
         <p>
           This calculator is for demonstration purposes only. Always consult a

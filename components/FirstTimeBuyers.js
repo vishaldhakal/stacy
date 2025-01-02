@@ -89,29 +89,43 @@ const FirstTimeBuyers = () => {
     <section className="py-8 sm:py-12 lg:py-16 my-6 md:my-16">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center text-center lg:text-left">
+          {/* Image Column - Moved to top for mobile */}
+          <div className="lg:w-1/2 order-1 lg:order-2 w-full">
+            <div className="relative flex justify-center items-center">
+              <Image
+                src="/firsttime.png"
+                alt="Happy first-time home buyers receiving their keys"
+                width={400}
+                height={400}
+                className="rounded-lg shadow-lg object-cover w-full max-w-sm mx-auto"
+              />
+              <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent rounded-lg"></div>
+            </div>
+          </div>
+
           {/* Left Column - Text Content */}
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 order-2 lg:order-1">
             <div className="max-w-xl mx-auto lg:mx-0">
-              <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl">
+              <h2 className="text-2xl font-extrabold text-gray-900 sm:text-3xl lg:text-4xl">
                 First-Time Home Buyer?
               </h2>
-              <p className="mt-3 text-base sm:text-lg text-gray-600">
+              <p className="mt-3 text-sm sm:text-lg text-black max-w-[300px] md:max-w-[400px] mx-auto md:mx-0">
                 Buying your first home is an exciting journey. I'm here to guide
                 you through every step of the process, making it simple and
                 stress-free.
               </p>
 
-              <div className="mt-8 space-y-1 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-2 sm:gap-6 px-4 sm:px-0 justify-center">
+              <div className="mt-6 sm:mt-8 space-y-1 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 px-4 sm:px-0 justify-center max-w-[300px] md:max-w-[400px] mx-auto md:mx-0">
                 {buyingSteps.map((step, index) => (
                   <div
                     key={index}
-                    className="flex flex-col sm:flex-row items-center text-center lg:text-left gap-3 sm:gap-4"
+                    className="flex flex-col md:flex-row items-center md:items-center text-center lg:text-left gap-2 sm:gap-3"
                   >
-                    <div className="flex-shrink-0 mb-2 sm:mb-0">
+                    <div className="flex-shrink-0 mb-1 sm:mb-2">
                       {step.icon}
                     </div>
                     <div>
-                      <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                      <h3 className="text-xs sm:text-sm font-semibold text-gray-900">
                         {step.title}
                       </h3>
                     </div>
@@ -119,49 +133,13 @@ const FirstTimeBuyers = () => {
                 ))}
               </div>
 
-              <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start px-4 sm:px-10 md:px-0 max-w-[300px] md:max-w-[350px] mx-auto md:mx-0">
                 <Link
                   href="#"
-                  className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-black rounded-md shadow-sm hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+                  className="inline-flex items-center justify-center px-6 py-3 text-sm sm:text-base font-medium text-white bg-black rounded-md shadow-sm hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
                 >
                   Schedule an Appointment
                 </Link>
-                <Link
-                  href="#"
-                  className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-black bg-white border border-black rounded-md shadow-sm hover:bg-amber-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
-                >
-                  Download Buyer's Guide
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column - Image */}
-          <div className="lg:w-1/2">
-            <div className="relative flex justify-center items-center">
-              <Image
-                src="/firsttime.png"
-                alt="Happy first-time home buyers receiving their keys"
-                width={400}
-                height={400}
-                className="rounded-lg shadow-lg object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent rounded-lg"></div>
-            </div>
-
-            {/* Stats */}
-            <div className="mt-8 grid grid-cols-2 gap-4">
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                <div className="text-2xl font-bold text-black">80%</div>
-                <p className="text-sm text-gray-600 mt-1">
-                  Of my first-time buyers find their dream home within 3 months
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                <div className="text-2xl font-bold text-black">95%</div>
-                <p className="text-sm text-gray-600 mt-1">
-                  Success rate in securing first-choice properties
-                </p>
               </div>
             </div>
           </div>

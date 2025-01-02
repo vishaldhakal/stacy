@@ -6,7 +6,7 @@ const SeeListings = () => {
   return (
     <div className="w-full bg-gray-100 py-20 flex flex-col items-center mb-[20rem]">
       <div className="max-w-[90%]">
-        <h2 className="uppercase text-sm sm:text-md text-center text-gray-600">
+        <h2 className="uppercase text-sm sm:text-md text-center text-black">
           Lowrise real estate listings
         </h2>
         <h1 className="text-2xl sm:text-4xl font-bold text-center">

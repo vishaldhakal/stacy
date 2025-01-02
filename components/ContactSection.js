@@ -45,7 +45,7 @@ const ContactSection = () => {
             <h2 className="text-2xl font-bold text-center text-gray-900 sm:text-3xl lg:text-4xl">
               Let's Connect
             </h2>
-            <p className="mt-3 text-base sm:text-lg text-gray-600">
+            <p className="mt-3 text-base sm:text-lg text-black">
               Have questions about buying or selling? I'm here to help you make
               the right move.
             </p>
@@ -70,9 +70,9 @@ const ContactSection = () => {
                 />
                 <label
                   htmlFor="name"
-                  className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all 
+                  className="absolute left-0 -top-3.5 text-black text-sm transition-all 
                   peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4
-                  peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+                  peer-focus:-top-3.5 peer-focus:text-black peer-focus:text-sm"
                 >
                   Your Name
                 </label>
@@ -92,9 +92,9 @@ const ContactSection = () => {
                 />
                 <label
                   htmlFor="email"
-                  className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all 
+                  className="absolute left-0 -top-3.5 text-black text-sm transition-all 
                   peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4
-                  peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+                  peer-focus:-top-3.5 peer-focus:text-black peer-focus:text-sm"
                 >
                   Email Address
                 </label>
@@ -113,9 +113,9 @@ const ContactSection = () => {
                 />
                 <label
                   htmlFor="phone"
-                  className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all 
+                  className="absolute left-0 -top-3.5 text-black text-sm transition-all 
                   peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4
-                  peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+                  peer-focus:-top-3.5 peer-focus:text-black peer-focus:text-sm"
                 >
                   Phone Number
                 </label>
@@ -139,9 +139,9 @@ const ContactSection = () => {
                 </select>
                 <label
                   htmlFor="propertyType"
-                  className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all 
+                  className="absolute left-0 -top-3.5 text-black text-sm transition-all 
                   peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4
-                  peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+                  peer-focus:-top-3.5 peer-focus:text-black peer-focus:text-sm"
                 >
                   Property Type
                 </label>
@@ -162,9 +162,9 @@ const ContactSection = () => {
               ></textarea>
               <label
                 htmlFor="message"
-                className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all 
+                className="absolute left-0 -top-3.5 text-black text-sm transition-all 
                 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2
-                peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+                peer-focus:-top-3.5 peer-focus:text-black peer-focus:text-sm"
               >
                 Your Message
               </label>

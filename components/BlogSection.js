@@ -32,17 +32,27 @@ const blogPosts = [
     readTime: "6 min read",
     date: "Feb 5, 2024",
   },
+  {
+    id: 4,
+    title: "The Future of London's Real Estate Market",
+    excerpt:
+      "Explore the latest predictions and trends shaping London's real estate market.",
+    image: "/1.jpg",
+    category: "Market Trends",
+    readTime: "7 min read",
+    date: "Jan 20, 2024",
+  },
 ];
 
 const BlogCard = ({ post }) => {
   return (
-    <div className="flex flex-col bg-white rounded-lg shadow-2xl overflow-hidden hover:shadow-md transition-shadow mx-auto w-full max-w-xs lg:max-w-none">
-      <div className="relative h-40 sm:h-48">
+    <div className="flex flex-col bg-white rounded-xl shadow-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 overflow-hidden border border-gray-100 mx-auto w-full">
+      <div className="relative h-28 sm:h-48">
         <Image
           src={post.image}
           alt={post.title}
           fill
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
         />
         <div className="absolute top-4 left-4">
           <span className="inline-block bg-amber-100 text-black text-xs px-3 py-1 rounded-full">
@@ -50,37 +60,16 @@ const BlogCard = ({ post }) => {
           </span>
         </div>
       </div>
-      <div className="p-4 sm:p-6">
-        <div className="flex items-center text-sm text-gray-500 mb-3 space-x-4">
+      <div className="p-3 sm:p-4">
+        <div className="flex items-center text-xs text-gray-500 mb-3 space-x-4">
           <span>{post.date}</span>
-          <span>•</span>
-          <span>{post.readTime}</span>
         </div>
-        <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
+        <h3 className="text-sm sm:text-base font-semibold text-gray-900 mb-2 line-clamp-2">
           {post.title}
         </h3>
-        <p className="text-sm sm:text-base text-gray-600 mb-4 line-clamp-2 text-start">
+        <p className="text-sm text-black mb-4 line-clamp-2 hidden md:block">
           {post.excerpt}
         </p>
-        <Link
-          href={`/blog/${post.id}`}
-          className="inline-flex items-center text-black hover:text-black"
-        >
-          Read More
-          <svg
-            className="w-4 h-4 ml-2"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
-        </Link>
       </div>
     </div>
   );
@@ -88,28 +77,28 @@ const BlogCard = ({ post }) => {
 
 const BlogSection = () => {
   return (
-    <section className="py-8 sm:py-12 lg:py-16 my-6 md:my-16">
+    <section className="py-6 sm:py-12 lg:py-16 my-4 md:my-16">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-2xl text-center text-gray-900 sm:text-5xl font-extrabold">
             Real Estate Insights
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-2 sm:mt-3 text-sm sm:text-lg text-black max-w-2xl mx-auto">
             Stay informed about London's real estate market with our latest
             articles and insights
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 px-4 sm:px-0">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 lg:gap-8">
           {blogPosts.map((post) => (
             <BlogCard key={post.id} post={post} />
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-8 sm:mt-12">
           <Link
             href="/blog"
-            className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-black rounded-md shadow-sm hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition-colors"
+            className="inline-flex items-center justify-center px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-base font-medium text-white bg-black rounded-md shadow-sm hover:bg-gray-800 transition-all duration-200"
           >
             View All Articles
           </Link>

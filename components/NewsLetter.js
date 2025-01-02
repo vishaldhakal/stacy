@@ -58,7 +58,7 @@ const NewsLetter = () => {
           <p className="mt-4 text-lg leading-6 text-gray-700">
             Send me information about new projects that are launching or selling
           </p>
-          <p className="mt-2 text-sm text-gray-600">
+          <p className="mt-2 text-sm text-black">
             Join Homebaba community of{" "}
             <span className="font-semibold">500,000+ Buyers & Investors</span>{" "}
             today!

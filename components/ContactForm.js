@@ -17,16 +17,22 @@ export default function ContactForm() {
 
   return (
     <div className="max-w-[700px] mx-auto px-4 py-12 sm:py-16">
-      <div className="text-center mb-12">
-        <h2 className="text-2xl font-extrabold text-gray-900 sm:text-3xl lg:text-5xl text-center">
+      <div className="text-center mb-5">
+        <div className="flex justify-center">
+          <img src="/stacy.png" alt="logo" className="w-32 h-32" />
+        </div>
+        <h2 className="text-5xl font-extrabold text-gray-900 sm:text-3xl lg:text-5xl text-center">
           Get in Touch
         </h2>
-        <p className="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className="mt-3 text-sm sm:text-lg text-black max-w-2xl mx-auto">
           Have questions about buying or selling?
         </p>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form
+        onSubmit={handleSubmit}
+        className="space-y-6 mx-auto max-w-[300px] md:max-w-[600px]"
+      >
         <div className="relative">
           <input
             type="text"

@@ -17,7 +17,7 @@ const stats = [
   {
     number: 98,
     suffix: "%",
-    label: "Client Satisfaction",
+    label: "Happy Clients",
     description: "Based on client reviews",
   },
   {
@@ -77,10 +77,10 @@ const StatCard = ({ number, suffix, label, description }) => {
             {suffix}
           </span>
         </div>
-        <h3 className="mt-3 text-base sm:text-lg font-semibold text-gray-900">
+        <h3 className="mt-3 text-sm sm:text-lg font-semibold text-black">
           {label}
         </h3>
-        <p className="mt-2 text-xs sm:text-sm text-gray-500">{description}</p>
+        <p className="mt-2 text-xs sm:text-sm text-black">{description}</p>
       </div>
     </div>
   );
@@ -91,18 +91,20 @@ const Statistics = () => {
     <section className="py-8 sm:py-12 lg:py-16 my-6 md:my-16">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-2xl text-center text-gray-900 sm:text-5xl font-extrabold">
+          <h2 className="text-3xl text-center text-gray-900 sm:text-5xl font-extrabold">
             Proven Track Record
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-3 text-base sm:text-lg text-black max-w-[300px] md:max-w-[600px] mx-auto">
             Years of experience and dedication in the London real estate market
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
-          {stats.map((stat, index) => (
-            <StatCard key={index} {...stat} />
-          ))}
+        <div className="max-w-sm sm:max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
+            {stats.map((stat, index) => (
+              <StatCard key={index} {...stat} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

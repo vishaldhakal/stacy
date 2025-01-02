@@ -77,7 +77,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="relative">
-          <label className=" px-1 text-sm text-gray-600">
+          <label className=" px-1 text-sm text-black">
             Are you a realtor or working with one?
           </label>
           <select

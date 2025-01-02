@@ -50,23 +50,23 @@ const MortgageCalculator = () => {
   };
 
   return (
-    <section className="py-8 sm:py-12 my-6 md:my-16">
+    <section className="py-6 sm:py-12 my-4 md:my-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="text-2xl text-center text-gray-900 sm:text-5xl font-extrabold">
             Mortgage Calculator
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-gray-600">
+          <p className="mt-2 sm:mt-3 text-sm sm:text-lg text-black">
             Estimate your monthly mortgage payments
           </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-lg p-6 md:p-8">
+        <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 md:p-8">
           <div className="grid gap-4 sm:gap-6 md:grid-cols-2 max-w-lg mx-auto md:max-w-none">
             {/* Input Fields */}
-            <div className="space-y-6 mx-auto w-full">
+            <div className="space-y-4 sm:space-y-6 mx-auto w-full">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                   Home Price
                 </label>
                 <div className="relative">
@@ -78,13 +78,13 @@ const MortgageCalculator = () => {
                     name="homePrice"
                     value={formData.homePrice}
                     onChange={handleInputChange}
-                    className="block w-full pl-7 pr-12 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                    className="block w-full pl-7 pr-12 py-2 text-sm sm:text-base border border-gray-300 rounded-md focus:ring-black focus:border-black"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                   Down Payment
                 </label>
                 <div className="relative">
@@ -96,13 +96,13 @@ const MortgageCalculator = () => {
                     name="downPayment"
                     value={formData.downPayment}
                     onChange={handleInputChange}
-                    className="block w-full pl-7 pr-12 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                    className="block w-full pl-7 pr-12 py-2 text-sm sm:text-base border border-gray-300 rounded-md focus:ring-black focus:border-black"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                   Interest Rate (%)
                 </label>
                 <input
@@ -116,7 +116,7 @@ const MortgageCalculator = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                   Loan Term (years)
                 </label>
                 <select
@@ -135,35 +135,41 @@ const MortgageCalculator = () => {
             </div>
 
             {/* Results */}
-            <div className="bg-gray-50 p-6 rounded-lg space-y-6 mx-auto w-full">
+            <div className="bg-gray-50 p-4 sm:p-6 rounded-lg space-y-4 sm:space-y-6 mx-auto w-full">
               <div>
-                <h3 className="text-lg font-medium text-gray-900 mb-4">
+                <h3 className="text-base sm:text-lg font-medium text-gray-900 mb-3 sm:mb-4">
                   Payment Summary
                 </h3>
                 <dl className="space-y-4">
                   <div className="flex justify-between">
-                    <dt className="text-sm text-gray-600">Monthly Payment:</dt>
-                    <dd className="text-lg font-semibold text-blue-600">
+                    <dt className="text-xs sm:text-sm text-black">
+                      Monthly Payment:
+                    </dt>
+                    <dd className="text-base sm:text-lg font-semibold text-black">
                       {formatCurrency(monthlyPayment)}
                     </dd>
                   </div>
                   <div className="flex justify-between">
-                    <dt className="text-sm text-gray-600">Total Payment:</dt>
-                    <dd className="text-sm text-gray-900">
+                    <dt className="text-xs sm:text-sm text-black">
+                      Total Payment:
+                    </dt>
+                    <dd className="text-xs sm:text-sm text-gray-900">
                       {formatCurrency(totalPayment)}
                     </dd>
                   </div>
                   <div className="flex justify-between">
-                    <dt className="text-sm text-gray-600">Total Interest:</dt>
-                    <dd className="text-sm text-gray-900">
+                    <dt className="text-xs sm:text-sm text-black">
+                      Total Interest:
+                    </dt>
+                    <dd className="text-xs sm:text-sm text-gray-900">
                       {formatCurrency(totalInterest)}
                     </dd>
                   </div>
                 </dl>
               </div>
 
-              <div className="bg-blue-50 p-4 rounded-md">
-                <p className="text-sm text-blue-700">
+              <div className="bg-amber-50 p-3 sm:p-4 rounded-md">
+                <p className="text-xs sm:text-sm text-black">
                   Down payment is{" "}
                   {((formData.downPayment / formData.homePrice) * 100).toFixed(
                     1
@@ -175,7 +181,7 @@ const MortgageCalculator = () => {
           </div>
         </div>
 
-        <div className="mt-6 text-center text-sm text-gray-500">
+        <div className="mt-4 sm:mt-6 text-center text-xs sm:text-sm text-gray-500">
           <p>
             This calculator provides estimates for informational purposes only.
             Actual payments may differ.

@@ -67,7 +67,7 @@ const Communities = () => {
               {properties.map((property) => (
                 <li
                   key={property}
-                  className="text-xs md:text-sm text-gray-600 hover:text-gray-900 transition-colors cursor-pointer text-center md:text-left"
+                  className="text-xs md:text-sm text-black hover:text-gray-900 transition-colors cursor-pointer text-center md:text-left"
                 >
                   {property}
                 </li>

@@ -140,7 +140,7 @@ const PropertyTax = () => {
         <h3 className="text-2xl font-bold text-gray-800 mb-2">
           ${calculatorData.taxes.totalTax}
         </h3>
-        <p className="text-gray-600">Estimated Annual Property Tax</p>
+        <p className="text-black">Estimated Annual Property Tax</p>
       </div>
     </div>
   );

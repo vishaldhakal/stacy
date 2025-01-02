@@ -20,7 +20,7 @@ const BlogCard = ({ data }) => {
         <h2 className="mt-2 text-lg sm:text-xl font-semibold text-gray-800 line-clamp-3 sm:line-clamp-2">
           {data.news_title}
         </h2>
-        <p className="mt-2 text-gray-600 text-sm">{data.date}</p>
+        <p className="mt-2 text-black text-sm">{data.date}</p>
       </div>
     </Link>
   );

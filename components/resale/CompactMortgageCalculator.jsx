@@ -209,9 +209,9 @@ export default function CompactMortgageCalculator({
             </svg>
             <div className="mt-8 text-center">
               <h3 className="text-2xl font-bold text-gray-800 mb-2">
-                ${calculated} <span className="text-lg text-gray-600">/mo</span>
+                ${calculated} <span className="text-lg text-black">/mo</span>
               </h3>
-              <p className="text-gray-600">
+              <p className="text-black">
                 Your Estimated Monthly Mortgage Payment
               </p>
             </div>
@@ -290,7 +290,7 @@ export default function CompactMortgageCalculator({
               ].map(({ term, def }) => (
                 <div key={term}>
                   <dt className="font-semibold text-gray-800">{term}</dt>
-                  <dd className="text-gray-600 mt-1">{def}</dd>
+                  <dd className="text-black mt-1">{def}</dd>
                 </div>
               ))}
             </dl>
@@ -301,7 +301,7 @@ export default function CompactMortgageCalculator({
       <div
         className={`bg-gray-100 p-4 mt-8 ${
           align === "center" ? "text-center" : ""
-        } text-sm text-gray-600`}
+        } text-sm text-black`}
       >
         <p>
           This calculator is for demonstration purposes only. Always consult a

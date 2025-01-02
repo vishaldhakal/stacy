@@ -43,7 +43,7 @@ const CanadianCitiesShowcase = () => {
             <span className="absolute bottom-0 left-0 w-full h-1 bg-primary-gretext-primary-green rounded"></span>
           </span>
         </h2>
-        <p className="text-center text-gray-600 mb-12">
+        <p className="text-center text-black mb-12">
           Explore top cities across Canada
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-x-2 gap-y-4 sm:gap-8">

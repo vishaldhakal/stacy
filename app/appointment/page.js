@@ -1,15 +1,12 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
 
 const AppointmentPage = () => {
   const [formData, setFormData] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
-    phone: "",
-    preferredDate: "",
-    preferredTime: "",
-    AppointmentType: "buyer",
+    subject: "",
     message: "",
   });
 
@@ -23,182 +20,215 @@ const AppointmentPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
     console.log(formData);
   };
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-gray-50 flex items-center justify-center min-h-screen">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto">
-          {/* Header */}
-          <div className="text-center mb-12">
-            <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl mb-4 text-center">
-              Book an Appointment
-            </h1>
-            <p className="text-lg text-gray-600">
-              Let's discuss your real estate goals and create a plan that works
-              for you
-            </p>
-          </div>
-
-          {/* Appointment Types */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
-            <div
-              className={`p-6 rounded-lg border-2 cursor-pointer transition-all text-center ${
-                formData.AppointmentType === "buyer"
-                  ? "border-black bg-black text-white"
-                  : "border-gray-200 hover:border-black"
-              }`}
-              onClick={() =>
-                handleChange({
-                  target: { name: "AppointmentType", value: "buyer" },
-                })
-              }
-            >
-              <h3 className="text-lg font-semibold mb-2">Buyer Appointment</h3>
-              <p className="text-sm opacity-100">
-                First-time buyer or looking for your next property? Let's find
-                your perfect home.
-              </p>
+    <section className="min-h-screen bg-white py-12 sm:py-16 lg:py-20 px-4">
+      <div className="max-w-[1000px] mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          {/* Left Column - Contact Info */}
+          <div className="space-y-8">
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-6 h-6 text-black">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-black text-lg font-semibold tracking-wider">
+                  TORONTO HEAD OFFICE
+                </h3>
+              </div>
+              <div className="text-gray-700 ml-9 space-y-1">
+                <p>328 Hwy 7 E, Unit 20</p>
+                <p>Richmond Hill, ON</p>
+                <p>L4B 3P7 Canada</p>
+              </div>
             </div>
 
-            <div
-              className={`p-6 rounded-lg border-2 cursor-pointer transition-all text-center ${
-                formData.AppointmentType === "seller"
-                  ? "border-black bg-black text-white"
-                  : "border-gray-200 hover:border-black"
-              }`}
-              onClick={() =>
-                handleChange({
-                  target: { name: "AppointmentType", value: "seller" },
-                })
-              }
-            >
-              <h3 className="text-lg font-semibold mb-2">Seller Appointment</h3>
-              <p className="text-sm opacity-90">
-                Ready to sell? Let's discuss your property's value and marketing
-                strategy.
-              </p>
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-6 h-6 text-black">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-black text-lg font-semibold tracking-wider">
+                  HONG KONG BRANCH OFFICE
+                </h3>
+              </div>
+              <div className="text-gray-700 ml-9 space-y-1">
+                <p>15/F, Soundwill Plaza II - Midtown</p>
+                <p>1-29 Tang Lung Street, Causeway Bay</p>
+                <p>Hong Kong</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <div className="w-6 h-6 text-black">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <a
+                href="mailto:admin@condowong.ca"
+                className="text-black hover:text-amber-600"
+              >
+                admin@condowong.ca
+              </a>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <div className="w-6 h-6 text-black">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+              </div>
+              <a
+                href="tel:+19058826882"
+                className="text-black hover:text-amber-600"
+              >
+                905.882.6882
+              </a>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <div className="w-6 h-6 text-black">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+              </div>
+              <a
+                href="tel:+16476293838"
+                className="text-black hover:text-amber-600"
+              >
+                +1 647.629.3838
+              </a>
             </div>
           </div>
 
-          {/* Booking Form */}
-          <form
-            onSubmit={handleSubmit}
-            className="space-y-6 bg-white rounded-xl shadow-sm p-8 "
-          >
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {/* Right Column - Contact Form */}
+          <div>
+            <form onSubmit={handleSubmit} className="space-y-8">
+              <div className="grid grid-cols-2 gap-8">
+                <div>
+                  <input
+                    type="text"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    className="w-full bg-transparent border-b border-gray-300 text-gray-900 px-0 py-2 focus:outline-none focus:border-black placeholder-gray-500"
+                    placeholder="First Name *"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    className="w-full bg-transparent border-b border-gray-300 text-gray-900 px-0 py-2 focus:outline-none focus:border-black placeholder-gray-500"
+                    placeholder="Last Name *"
+                    required
+                  />
+                </div>
+              </div>
+
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Your Name
-                </label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full bg-transparent border-b border-gray-300 text-gray-900 px-0 py-2 focus:outline-none focus:border-black placeholder-gray-500"
+                  placeholder="Email *"
+                  required
+                />
+              </div>
+
+              <div>
                 <input
                   type="text"
-                  name="name"
-                  value={formData.name}
+                  name="subject"
+                  value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black focus:border-transparent text-center"
+                  className="w-full bg-transparent border-b border-gray-300 text-gray-900 px-0 py-2 focus:outline-none focus:border-black placeholder-gray-500"
+                  placeholder="Subject *"
                   required
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
+                <textarea
+                  name="message"
+                  value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black focus:border-transparent text-center"
+                  rows={4}
+                  className="w-full bg-transparent border-b border-gray-300 text-gray-900 px-0 py-2 focus:outline-none focus:border-black resize-none placeholder-gray-500"
+                  placeholder="Message *"
                   required
                 />
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Preferred Date
-                </label>
-                <input
-                  type="date"
-                  name="preferredDate"
-                  value={formData.preferredDate}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black focus:border-transparent text-center"
-                  required
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Preferred Time
-                </label>
-                <select
-                  name="preferredTime"
-                  value={formData.preferredTime}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black focus:border-transparent text-center"
-                  required
-                >
-                  <option value="">Select a time</option>
-                  <option value="morning">Morning (9AM - 12PM)</option>
-                  <option value="afternoon">Afternoon (12PM - 4PM)</option>
-                  <option value="evening">Evening (4PM - 7PM)</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Email Address
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black focus:border-transparent text-center"
-                required
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Additional Information
-              </label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                rows={4}
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black focus:border-transparent text-center"
-                placeholder="Please provide any information or questions you may have."
-              />
-            </div>
-
-            <div className="flex justify-center">
               <button
                 type="submit"
-                className="w-full max-w-md mx-auto px-6 py-4 text-base font-medium text-white bg-black rounded-md hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition-colors"
+                className="bg-black text-white px-12 py-3 font-medium hover:bg-amber-600 transition-colors duration-200"
               >
-                Schedule Appointment
+                Send
               </button>
-            </div>
-          </form>
-
-          {/* Contact Information */}
-          <div className="mt-12 text-center">
-            <p className="text-gray-600 text-center">
-              Prefer to talk first? Call me directly at{" "}
-              <a
-                href="tel:+15199337344"
-                className="text-black font-medium hover:underline"
-              >
-                (519) 933-7344
-              </a>
-            </p>
+            </form>
           </div>
         </div>
       </div>

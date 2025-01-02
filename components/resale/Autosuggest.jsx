@@ -34,7 +34,7 @@ const Autosuggest = ({
             </section> */}
 
       {/* SUGGESTIONS */}
-      <div className="text-xs text-center text-gray-600 font-bold">
+      <div className="text-xs text-center text-black font-bold">
         SUGGESTIONS
       </div>
       {searchTerm && suggestions.length > 0 ? (
@@ -67,7 +67,7 @@ const Autosuggest = ({
               suggestions.length > 0 && searchTerm && "border-t-1 mt-2 pt-2"
             }`}
           >
-            <div className="text-xs text-gray-600 font-bold text-center">
+            <div className="text-xs text-black font-bold text-center">
               RECENT SEARCHES
             </div>
             <div>

@@ -28,7 +28,17 @@ const testimonials = [
     avatar: "EZ",
     avatarColor: "bg-purple-500",
     content:
-      "As newcomers to London, her knowledge of different neighborhoods was invaluable. Found our perfect home in Masonville.",
+      "As newcomers to London, his knowledge of different neighborhoods was invaluable. Found our perfect home in Masonville.",
+    rating: 5,
+  },
+  {
+    id: 4,
+    name: "John Doe",
+    role: "Home Buyer",
+    avatar: "JD",
+    avatarColor: "bg-green-500",
+    content:
+      "I was able to find my dream home with Stacy's help. He was patient, knowledgeable, and always available to answer my questions. I highly recommend his services!",
     rating: 5,
   },
 ];
@@ -54,22 +64,22 @@ const StarRating = ({ rating }) => {
 
 const TestimonialCard = ({ testimonial }) => {
   return (
-    <div className="flex flex-col items-center lg:items-start bg-white rounded-lg p-6 shadow-sm">
+    <div className="flex flex-col items-center lg:items-start bg-white rounded-lg p-4 sm:p-6 shadow-sm">
       <div className="flex flex-col items-center lg:items-start lg:flex-row lg:gap-4 mb-4">
         <div
-          className={`w-12 h-12 ${testimonial.avatarColor} rounded-full flex items-center justify-center text-white text-lg font-semibold mb-3 lg:mb-0`}
+          className={`w-10 h-10 sm:w-12 sm:h-12 ${testimonial.avatarColor} rounded-full flex items-center justify-center text-white text-base sm:text-lg font-semibold mb-2 sm:mb-3 lg:mb-0`}
         >
           {testimonial.avatar}
         </div>
         <div className="text-center lg:text-left">
-          <h3 className="text-lg font-semibold text-gray-900">
+          <h3 className="text-base sm:text-lg font-semibold text-gray-900">
             {testimonial.name}
           </h3>
-          <p className="text-sm text-gray-500">{testimonial.role}</p>
+          <p className="text-xs sm:text-sm text-gray-500">{testimonial.role}</p>
         </div>
       </div>
       <StarRating rating={testimonial.rating} />
-      <p className="mt-4 text-gray-600 text-center lg:text-left">
+      <p className="mt-3 sm:mt-4 text-sm sm:text-base text-black text-center lg:text-left line-clamp-3 sm:line-clamp-none">
         {testimonial.content}
       </p>
     </div>
@@ -81,16 +91,16 @@ const Testimonials = () => {
     <section className="py-8 sm:py-12 lg:py-16 my-6 md:my-16 bg-gray-50">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-2xl font-bold text-center text-gray-900 sm:text-3xl lg:text-4xl">
+          <h2 className="text-2xl font-extrabold text-center text-gray-900 sm:text-3xl lg:text-4xl">
             Client Testimonials
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-2 sm:mt-3 text-sm sm:text-lg text-black max-w-2xl mx-auto">
             Hear what my clients have to say about their experience working with
             me
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
           {testimonials.map((testimonial) => (
             <TestimonialCard key={testimonial.id} testimonial={testimonial} />
           ))}

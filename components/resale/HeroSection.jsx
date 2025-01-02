@@ -103,7 +103,7 @@ export default HeroSection;
               <p className="text-sm font-semibold text-gray-900">
                 Featured Property
               </p>
-              <p className="text-xs text-gray-600">
+              <p className="text-xs text-black">
                 Modern Townhouse in Downtown
               </p>
             </div>

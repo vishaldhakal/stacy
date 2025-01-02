@@ -49,7 +49,7 @@ const ChatTab = ({
         {replyingTo && (
           <div className="mb-2 p-2 bg-gray-50 rounded-lg text-sm">
             <div className="flex justify-between items-center">
-              <span className="text-gray-600">Replying to:</span>
+              <span className="text-black">Replying to:</span>
               <button
                 onClick={() => setReplyingTo(null)}
                 className="text-gray-500 hover:text-gray-700"

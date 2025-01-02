@@ -192,7 +192,7 @@ const Navbar = () => {
           <Link
             key={link.label}
             href={link.href}
-            className="text-sm hover:text-gray-600"
+            className="text-sm hover:text-black"
           >
             {link.label}
           </Link>
@@ -245,7 +245,7 @@ const Navbar = () => {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="text-lg hover:text-gray-600 py-2"
+                  className="text-lg hover:text-black py-2"
                 >
                   {link.label}
                 </Link>
