@@ -7,11 +7,13 @@ import FirstTimeBuyers from "@/components/FirstTimeBuyers";
 import ContactSection from "@/components/ContactSection";
 import BlogSection from "@/components/BlogSection";
 import ContactForm from "@/components/ContactForm";
+import AboutTeam from "@/components/AboutTeam";
 
 export default function Home() {
   return (
     <main>
       <HeroSection />
+      <AboutTeam />
       <Statistics />
       <FirstTimeBuyers />
       <MortgageCalculator />

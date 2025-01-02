@@ -25,7 +25,18 @@ const AppointmentPage = () => {
 
   return (
     <section className="min-h-screen bg-white py-12 sm:py-16 lg:py-20 px-4">
-      <div className="max-w-[1000px] mx-auto">
+      <div className="text-center mb-5">
+        <div className="flex justify-center">
+          <img src="/stacy.png" alt="logo" className="w-32 h-32" />
+        </div>
+        <h2 className="text-5xl font-extrabold text-gray-900 sm:text-3xl lg:text-5xl text-center mt-4">
+          Get in Touch
+        </h2>
+        <p className="mt-3 text-sm sm:text-lg text-black max-w-2xl mx-auto">
+          Have questions about buying or selling?
+        </p>
+      </div>
+      <div className="max-w-[1000px] mx-auto mt-16 bg-gray-50 p-12">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left Column - Contact Info */}
           <div className="space-y-8">
@@ -46,42 +57,14 @@ const AppointmentPage = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="text-black text-lg font-semibold tracking-wider">
-                  TORONTO HEAD OFFICE
+                <h3 className="text-black text-md font-semibold tracking-wider">
+                  Sutton Group Select Realty Inc. Brokerage
                 </h3>
               </div>
               <div className="text-gray-700 ml-9 space-y-1">
-                <p>328 Hwy 7 E, Unit 20</p>
-                <p>Richmond Hill, ON</p>
-                <p>L4B 3P7 Canada</p>
-              </div>
-            </div>
-
-            <div>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-6 h-6 text-black">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-black text-lg font-semibold tracking-wider">
-                  HONG KONG BRANCH OFFICE
-                </h3>
-              </div>
-              <div className="text-gray-700 ml-9 space-y-1">
-                <p>15/F, Soundwill Plaza II - Midtown</p>
-                <p>1-29 Tang Lung Street, Causeway Bay</p>
-                <p>Hong Kong</p>
+                <p>250 Wharncliffe Road North</p>
+                <p>London, ON</p>
+                <p>N6H 2B8 Canada</p>
               </div>
             </div>
 
@@ -105,7 +88,7 @@ const AppointmentPage = () => {
                 href="mailto:admin@condowong.ca"
                 className="text-black hover:text-amber-600"
               >
-                admin@condowong.ca
+                stacyanast@yahoo.ca
               </a>
             </div>
 
@@ -129,7 +112,7 @@ const AppointmentPage = () => {
                 href="tel:+19058826882"
                 className="text-black hover:text-amber-600"
               >
-                905.882.6882
+                519 933-7344
               </a>
             </div>
 
@@ -153,7 +136,7 @@ const AppointmentPage = () => {
                 href="tel:+16476293838"
                 className="text-black hover:text-amber-600"
               >
-                +1 647.629.3838
+                519 433-4331
               </a>
             </div>
           </div>
@@ -224,7 +207,7 @@ const AppointmentPage = () => {
 
               <button
                 type="submit"
-                className="bg-black text-white px-12 py-3 font-medium hover:bg-amber-600 transition-colors duration-200"
+                className="bg-black text-white px-12 py-3 font-medium hover:bg-amber-600 transition-colors duration-200 w-full"
               >
                 Send
               </button>

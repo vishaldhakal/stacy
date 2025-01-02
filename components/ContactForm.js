@@ -21,7 +21,7 @@ export default function ContactForm() {
         <div className="flex justify-center">
           <img src="/stacy.png" alt="logo" className="w-32 h-32" />
         </div>
-        <h2 className="text-5xl font-extrabold text-gray-900 sm:text-3xl lg:text-5xl text-center">
+        <h2 className="text-5xl font-extrabold text-gray-900 sm:text-3xl lg:text-5xl text-center mt-4">
           Get in Touch
         </h2>
         <p className="mt-3 text-sm sm:text-lg text-black max-w-2xl mx-auto">

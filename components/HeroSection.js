@@ -7,8 +7,8 @@ const HeroSection = () => {
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between">
         <div className="w-full lg:w-1/2 px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 text-center lg:text-left">
           <div className="lg:max-w-2xl">
-            <h1 className="text-4xl sm:text-4xl lg:text-6xl font-extrabold text-gray-900">
-              Stacy Anastasiadis
+            <h1 className="text-4xl sm:text-4xl lg:text-[2.9rem] font-extrabold text-gray-900">
+              Stacy and Louise Team
             </h1>
             <p className="text-xs md:text-xl text-black mt-3">
               Sales Representative : Sutton Group Select Realty Inc.
