@@ -17,7 +17,7 @@ const AboutTeam = () => {
         </div>
 
         {/* Profile Image - Centered */}
-        <div className="flex justify-center mb-12">
+        <div className="flex justify-center mb-0">
           <div className="relative w-56 h-56 lg:w-64 lg:h-64">
             <Image
               src="/stacy.png"
