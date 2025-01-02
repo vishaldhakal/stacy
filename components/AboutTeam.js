@@ -35,7 +35,7 @@ const AboutTeam = () => {
             <h3 className="text-xl sm:text-2xl font-semibold mb-3 text-gray-900">
               Stacy Anastasiadis
             </h3>
-            <p className="text-sm text-amber-600 mb-6 font-medium">
+            <p className="text-sm text-black mb-6 font-medium">
               Real Estate Agent | 20+ Years Experience
             </p>
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
@@ -52,7 +52,7 @@ const AboutTeam = () => {
             <h3 className="text-xl sm:text-2xl font-semibold mb-3 text-gray-900">
               Louise Anastasiadis
             </h3>
-            <p className="text-sm text-amber-600 mb-6 font-medium">
+            <p className="text-sm text-black mb-6 font-medium">
               Licensed Realtor | Former Banking Professional
             </p>
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
