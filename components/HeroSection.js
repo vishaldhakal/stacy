@@ -3,13 +3,13 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="pt-10 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16">
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="grid items-center grid-cols-1 md:grid-cols-2">
-          <div>
-            <h2 className="text-3xl font-bold text-black sm:text-4xl leading-8">
+    <section className="relative">
+      <div className="flex flex-col-reverse lg:flex-row items-center">
+        <div className="w-full lg:w-1/2 px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 text-center lg:text-left">
+          <div className="max-w-xl mx-auto lg:mx-0">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
               Hey 👋 I am <br className="block sm:hidden" /> Stacy Anastasiadis
-            </h2>
+            </h1>
             <p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
               With over 15 years experience in the real estate industry, I am
               passionate about working with my clients by comprehending their
@@ -32,17 +32,17 @@ const HeroSection = () => {
               </Link>
             </p>
           </div>
+        </div>
 
-          <div className="relative">
-            <Image
-              className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
-              src="/stacy.png"
-              alt="Jenny Carter - Professional Portrait"
-              width={600}
-              height={800}
-              priority
-            />
-          </div>
+        <div className="relative">
+          <Image
+            className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
+            src="/stacy.png"
+            alt="Jenny Carter - Professional Portrait"
+            width={600}
+            height={800}
+            priority
+          />
         </div>
       </div>
     </section>

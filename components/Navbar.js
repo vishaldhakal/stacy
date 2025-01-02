@@ -102,15 +102,15 @@ const Navbar = () => {
         <nav
           className={`${
             isMobileMenuOpen ? "block" : "hidden"
-          } pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden`}
+          } pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden fixed left-0 right-0 top-16 z-50`}
         >
           <div className="flow-root">
-            <div className="flex flex-col px-6 -my-2 space-y-1">
+            <div className="flex flex-col items-center px-6 -my-2 space-y-3">
               {navLinks.map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                  className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-amber-600 focus:text-amber-600"
                 >
                   {link.label}
                 </Link>

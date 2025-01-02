@@ -68,15 +68,15 @@ const Footer = () => {
       />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center lg:text-left">
           {/* Logo and Contact */}
-          <div className="col-span-2 md:col-span-1">
+          <div className="col-span-1 sm:col-span-2 lg:col-span-1 flex flex-col items-center lg:items-start">
             <Image
               src="/sutton.gif"
               alt="Sutton Logo"
               width={120}
               height={40}
-              className="mb-6"
+              className="mb-6 mx-auto sm:mx-0"
             />
             <div className="space-y-3 text-sm text-gray-700">
               <p>Stacy Anastasiadis</p>

@@ -88,10 +88,10 @@ const FirstTimeBuyers = () => {
   return (
     <section className="py-8 sm:py-12 lg:py-16 my-6 md:my-16">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center text-center lg:text-left">
           {/* Left Column - Text Content */}
           <div className="lg:w-1/2">
-            <div className="max-w-xl">
+            <div className="max-w-xl mx-auto lg:mx-0">
               <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl">
                 First-Time Home Buyer?
               </h2>
@@ -103,19 +103,26 @@ const FirstTimeBuyers = () => {
 
               <div className="mt-8 space-y-6">
                 {buyingSteps.map((step, index) => (
-                  <div key={index} className="flex gap-4">
-                    <div className="flex-shrink-0 mt-1">{step.icon}</div>
+                  <div
+                    key={index}
+                    className="flex flex-col sm:flex-row items-center text-center lg:text-left gap-3 sm:gap-4"
+                  >
+                    <div className="flex-shrink-0 mb-2 sm:mb-0">
+                      {step.icon}
+                    </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900">
+                      <h3 className="text-base sm:text-lg font-semibold text-gray-900">
                         {step.title}
                       </h3>
-                      <p className="mt-2 text-gray-600">{step.description}</p>
+                      <p className="mt-1 sm:mt-2 text-sm text-gray-600">
+                        {step.description}
+                      </p>
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-10 flex flex-col sm:flex-row gap-4">
+              <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
                   href="#"
                   className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-amber-500 rounded-md shadow-sm hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500"

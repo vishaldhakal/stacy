@@ -66,11 +66,11 @@ const StatCard = ({ number, suffix, label, description }) => {
   return (
     <div
       ref={countRef}
-      className="relative p-4 sm:p-6 lg:p-8 bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+      className="relative p-4 sm:p-6 bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow max-w-xs mx-auto w-full lg:max-w-none"
     >
       <div className="flex flex-col items-center text-center">
         <div className="flex items-baseline">
-          <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-amber-500">
+          <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-amber-500">
             {count}
           </span>
           <span className="text-xl sm:text-2xl font-semibold text-amber-500 ml-1">
@@ -99,7 +99,7 @@ const Statistics = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
           {stats.map((stat, index) => (
             <StatCard key={index} {...stat} />
           ))}

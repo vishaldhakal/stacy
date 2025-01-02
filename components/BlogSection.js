@@ -36,13 +36,13 @@ const blogPosts = [
 
 const BlogCard = ({ post }) => {
   return (
-    <div className="flex flex-col bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+    <div className="flex flex-col bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow mx-auto w-full max-w-xs lg:max-w-none">
       <div className="relative h-40 sm:h-48">
         <Image
           src={post.image}
           alt={post.title}
           fill
-          className="object-cover"
+          className="object-cover w-full h-full"
         />
         <div className="absolute top-4 left-4">
           <span className="inline-block bg-amber-100 text-amber-800 text-xs px-3 py-1 rounded-full">
@@ -100,7 +100,7 @@ const BlogSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 px-4 sm:px-0">
           {blogPosts.map((post) => (
             <BlogCard key={post.id} post={post} />
           ))}

@@ -30,11 +30,11 @@ const ContactSection = () => {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           {/* Profile Image */}
-          <div className="flex justify-center mb-10">
+          <div className="flex justify-center mb-8 sm:mb-10">
             <Image
               src="/stacy.png"
               alt="Stacy Anastasiadis"
-              width={158}
+              width={140}
               height={128}
               className="rounded-full object-cover shadow-lg border-4 border-amber-500"
             />
@@ -51,7 +51,9 @@ const ContactSection = () => {
             </p>
           </div>
 
-          {/* Contact Form */}
+          {/* Contact Info */}
+
+          {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-8">
             <div className="grid grid-cols-1 gap-6 sm:gap-8 sm:grid-cols-2">
               {/* Name Input */}
@@ -178,11 +180,9 @@ const ContactSection = () => {
               </button>
             </div>
           </form>
-
-          {/* Contact Info */}
-          <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 text-center">
+          <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
             <div>
-              <div className="flex justify-center items-center mb-4">
+              <div className="flex justify-center lg:justify-start items-center mb-4">
                 <svg
                   className="w-6 h-6 text-amber-500"
                   fill="none"
@@ -197,10 +197,12 @@ const ContactSection = () => {
                   />
                 </svg>
               </div>
-              <p className="text-gray-600">+1 (519) 933-7344</p>
+              <p className="text-gray-600 text-center lg:text-left">
+                +1 (519) 933-7344
+              </p>
             </div>
             <div>
-              <div className="flex justify-center items-center mb-4">
+              <div className="flex justify-center lg:justify-start items-center mb-4">
                 <svg
                   className="w-6 h-6 text-amber-500"
                   fill="none"
@@ -215,10 +217,12 @@ const ContactSection = () => {
                   />
                 </svg>
               </div>
-              <p className="text-gray-600">stacy@sutton.com</p>
+              <p className="text-gray-600 text-center lg:text-left">
+                stacy@sutton.com
+              </p>
             </div>
-            <div className="sm:col-span-2 lg:col-span-1">
-              <div className="flex justify-center items-center mb-4">
+            <div>
+              <div className="flex justify-center lg:justify-start items-center mb-4">
                 <svg
                   className="w-6 h-6 text-amber-500"
                   fill="none"
@@ -239,7 +243,9 @@ const ContactSection = () => {
                   />
                 </svg>
               </div>
-              <p className="text-gray-600">London, Ontario</p>
+              <p className="text-gray-600 text-center lg:text-left">
+                London, Ontario
+              </p>
             </div>
           </div>
         </div>

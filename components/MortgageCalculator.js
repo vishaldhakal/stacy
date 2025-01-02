@@ -62,9 +62,9 @@ const MortgageCalculator = () => {
         </div>
 
         <div className="bg-white rounded-lg shadow-lg p-6 md:p-8">
-          <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
+          <div className="grid gap-4 sm:gap-6 md:grid-cols-2 max-w-lg mx-auto md:max-w-none">
             {/* Input Fields */}
-            <div className="space-y-6">
+            <div className="space-y-6 mx-auto w-full">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Home Price
@@ -135,7 +135,7 @@ const MortgageCalculator = () => {
             </div>
 
             {/* Results */}
-            <div className="bg-gray-50 p-6 rounded-lg space-y-6">
+            <div className="bg-gray-50 p-6 rounded-lg space-y-6 mx-auto w-full">
               <div>
                 <h3 className="text-lg font-medium text-gray-900 mb-4">
                   Payment Summary
