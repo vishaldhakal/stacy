@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { generateURL } from "@/helpers/generateResaleURL";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/resale/ontario", label: "London Listings" },
+    { href: generateURL({ cityVal: "London" }), label: "London Listings" },
     { href: "/#first-time-buyers", label: "New Home Buyers" },
     { href: "/#about", label: "About" },
     { href: "/appointment", label: "Contact" },
