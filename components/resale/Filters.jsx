@@ -387,7 +387,7 @@ const CustomDropdown = ({
       >
         <span className="truncate">
           {Object.values(houseType).find((obj) => obj.value == selectedValues)
-            ?.name || "Bed"}
+            ?.name || "House Type"}
         </span>
         <FaChevronDown
           size={10}
