@@ -17,8 +17,8 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    /* { href: generateURL({ cityVal: "London" }), label: "London Listings" }, */
-    { href: "/#first-time-buyers", label: "New Home Buyers" },
+    { href: "/buying-home", label: "Buying" },
+    { href: "/selling-home", label: "Selling" },
     { href: "/#about", label: "About" },
     { href: "/appointment", label: "Contact" },
   ];
