@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 const RecentSales = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [hovegreenIndex, setHovegreenIndex] = useState(null);
 
   const sales = Array.from({ length: 12 }, (_, i) => ({
     id: i + 1,
@@ -18,7 +18,7 @@ const RecentSales = () => {
     <section className="py-12 sm:py-16 lg:py-20 px-4 max-w-7xl mx-auto">
       {/* Header Section */}
       <div className="text-center mb-12">
-        <h2 className="text-2xl md:text-5xl tracking-tight font-extrabold leading-[1.2] md:leading-[1.2] bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent pb-2 text-center">
+        <h2 className="text-2xl md:text-5xl tracking-tight font-extrabold leading-[1.2] md:leading-[1.2] text-black pb-2 text-center">
           Our Recent Sales
         </h2>
         <p className="mt-0 text-lg leading-6 text-gray-700">
@@ -33,6 +33,12 @@ const RecentSales = () => {
             key={sale.id}
             className="relative group rounded-xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-shadow duration-300"
           >
+            <div className="absolute top-2 right-2 z-10">
+              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 border border-green-200">
+                Sold
+              </span>
+            </div>
+
             <div className="relative h-48 sm:h-56">
               <Image
                 src={sale.image}

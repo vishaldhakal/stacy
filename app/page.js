@@ -5,7 +5,8 @@ import PromoSection from "@/components/PromoSection";
 import Testimonials from "@/components/Testimonials";
 import Statistics from "@/components/Statistics";
 import FirstTimeBuyers from "@/components/FirstTimeBuyers";
-import ContactSection from "@/components/ContactSection";
+import LondonInfo from "@/components/LondonInfo";
+import LondonNeighbourhoods from "@/components/LondonNeighbourhoods";
 import BlogSection from "@/components/BlogSection";
 import ContactForm from "@/components/ContactForm";
 import AboutTeam from "@/components/AboutTeam";
@@ -18,6 +19,8 @@ export default function Home() {
       <Statistics />
       <FirstTimeBuyers />
       <RecentSales />
+      <LondonInfo />
+      <LondonNeighbourhoods />
       <MortgageCalculator />
       <BlogSection />
       <PromoSection />
@@ -32,6 +35,7 @@ export default function Home() {
       </p>
       <ContactForm />
       <div className="my-20"></div>
+      <LondonInfo />
     </main>
   );
 }
