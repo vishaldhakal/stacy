@@ -113,32 +113,6 @@ const BuyerPage = () => {
               Consider working with a mortgage broker who can find the best
               terms and rates across multiple lenders.
             </p>
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div className="bg-white p-4 rounded-md shadow-sm">
-                <h4 className="font-semibold text-lg mb-2">
-                  Katherine McIntyre
-                </h4>
-                <p className="text-gray-600">Mortgage Alliance</p>
-                <p className="text-black">519-719-9415</p>
-                <a
-                  href="mailto:kmcintyre@mortgagealliance.com"
-                  className="text-black hover:underline"
-                >
-                  kmcintyre@mortgagealliance.com
-                </a>
-              </div>
-              <div className="bg-white p-4 rounded-md shadow-sm">
-                <h4 className="font-semibold text-lg mb-2">David Yuzpe</h4>
-                <p className="text-gray-600">Real Mortgage Associates</p>
-                <p className="text-black">519-670-6427</p>
-                <a
-                  href="mailto:davidyuzpe@rmabroker.ca"
-                  className="text-black hover:underline"
-                >
-                  davidyuzpe@rmabroker.ca
-                </a>
-              </div>
-            </div>
           </div>
 
           {/* Legal Section */}
@@ -154,32 +128,6 @@ const BuyerPage = () => {
                 <li key={index}>{req}</li>
               ))}
             </ul>
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div className="bg-white p-4 rounded-md shadow-sm">
-                <h4 className="font-semibold text-lg mb-2">Jordan Overholt</h4>
-                <p className="text-gray-600">
-                  380 Wellington Street Tower B, 6th Floor
-                </p>
-                <p className="text-black">226-926-9007</p>
-                <a
-                  href="mailto:jordan@jtoverholt.com"
-                  className="text-black hover:underline"
-                >
-                  jordan@jtoverholt.com
-                </a>
-              </div>
-              <div className="bg-white p-4 rounded-md shadow-sm">
-                <h4 className="font-semibold text-lg mb-2">Doug Cassino</h4>
-                <p className="text-gray-600">153-759 Hyde Park Road</p>
-                <p className="text-black">519-472-6310</p>
-                <a
-                  href="mailto:cassinolaw@execulink.com"
-                  className="text-black hover:underline"
-                >
-                  cassinolaw@execulink.com
-                </a>
-              </div>
-            </div>
           </div>
 
           {/* Home Inspector Section */}
@@ -197,34 +145,26 @@ const BuyerPage = () => {
                 </li>
               ))}
             </div>
-            <div className="bg-white p-4 rounded-md shadow-sm mb-6">
-              <h4 className="font-semibold text-lg mb-2">David Kelly RHI</h4>
-              <p className="text-gray-600">Valley Home Inspection Inc.</p>
-              <p className="text-gray-600">London - St. Thomas</p>
-              <p className="text-black">519-319-7589</p>
-            </div>
             <div className=" p-4 rounded-md">
               <h4 className="font-semibold mb-2">W.E.T.T. Inspections</h4>
               <p className="text-gray-700 mb-4">
                 A WETT inspection examines your solid fuel burning system for
                 safety and compliance. Often required for home insurance.
               </p>
-              <div className="text-gray-700">
-                <p className="font-medium">Safe Home Fireplace</p>
-                <p>519-245-7080</p>
-                <a
-                  href="mailto:info@safehomefireplace.ca"
-                  className="text-black hover:underline"
-                >
-                  info@safehomefireplace.ca
-                </a>
-              </div>
             </div>
           </div>
         </section>
 
         {/* CTA Section */}
         <section className="mt-16 text-center">
+          <div className="flex justify-center mb-3">
+            <img
+              className="w-full lg:w-auto h-auto max-w-md lg:max-w-lg xl:max-w-xl max-h-[200px]"
+              src="/stacy.png"
+              alt="Stacy Anastasiadis - Professional Portrait"
+            />
+          </div>
+          <p className="text-sm text-gray-700">Stacy and Louise Team</p>
           <Link
             href="/appointment"
             className="inline-block bg-black text-white px-8 py-3 rounded-md font-semibold hover:bg-gray-800 transition-colors"

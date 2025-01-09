@@ -21,12 +21,25 @@ const AboutTeam = () => {
               goals come true!
             </p>
           </div>
-          {/* Profile Image - Centered */}
-          <div className="flex justify-center mb-0 relative z-10">
-            <div className="relative w-56 h-56 lg:w-64 lg:h-64">
+          {/* Profile Images - Centered */}
+          <div className="flex justify-center gap-8 mb-12 relative z-10">
+            {/* Stacy's Image */}
+            <div className="relative w-48 h-48 lg:w-56 lg:h-56">
               <Image
-                src="/stacy.png"
+                src="/stacy.jpg"
                 alt="Stacy Anastasiadis"
+                fill
+                className="object-cover rounded-full border-4 border-amber-100 shadow-[0_0_20px_rgba(0,0,0,0.1),0_10px_20px_-10px_rgba(0,0,0,0.2)] hover:shadow-[0_0_25px_rgba(0,0,0,0.15),0_15px_25px_-15px_rgba(0,0,0,0.3)] transition-shadow duration-300"
+                priority
+              />
+              <div className="absolute -inset-4 rounded-full bg-gradient-to-b from-amber-100/20 to-transparent -z-10 blur-sm"></div>
+            </div>
+
+            {/* Louise's Image */}
+            <div className="relative w-48 h-48 lg:w-56 lg:h-56">
+              <Image
+                src="/louise.jpg"
+                alt="Louise Anastasiadis"
                 fill
                 className="object-cover rounded-full border-4 border-amber-100 shadow-[0_0_20px_rgba(0,0,0,0.1),0_10px_20px_-10px_rgba(0,0,0,0.2)] hover:shadow-[0_0_25px_rgba(0,0,0,0.15),0_15px_25px_-15px_rgba(0,0,0,0.3)] transition-shadow duration-300"
                 priority
@@ -41,7 +54,7 @@ const AboutTeam = () => {
                 Stacy Anastasiadis
               </h3>
               <p className="text-sm text-black mb-6 font-medium">
-                Real Estate Agent | 20+ Years Experience
+                Licensed Realtor® | 20+ Years Experience
               </p>
               <p className="text-sm sm:text-base text-black leading-relaxed">
                 With over 20 years in real estate serving London and surrounding
@@ -58,7 +71,7 @@ const AboutTeam = () => {
                 Louise Anastasiadis
               </h3>
               <p className="text-sm text-black mb-6 mt-0 font-medium pb-0 leading-none">
-                Licensed Realtor | Former Banking Professional
+                Licensed Realtor® | Former Banking Professional
               </p>
               <p className="text-sm sm:text-base text-black leading-relaxed">
                 After 25+ years in banking specializing in mortgage financing
@@ -71,21 +84,6 @@ const AboutTeam = () => {
           {/* Team Value Proposition */}
         </div>
       </section>
-      <div className="mt-16 lg:mt-20 text-center max-w-3xl mx-auto bg-gray-50 p-8 rounded-2xl">
-        <p className="text-sm sm:text-base text-gray-700 italic leading-relaxed">
-          "Together, we make your life easier and your transition seamless. Our
-          combined experience in real estate and banking ensures you'll feel
-          comfortable and confident throughout your real estate journey."
-        </p>
-        <div className="mt-10">
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 text-sm sm:text-base font-medium text-white bg-black rounded-xl shadow-md hover:bg-black hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition-all duration-300"
-          >
-            Book an Appointment
-          </Link>
-        </div>
-      </div>
     </>
   );
 };

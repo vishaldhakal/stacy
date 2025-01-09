@@ -155,7 +155,7 @@ const Footer = () => {
                 </Link>
               ))}
             </div>
-            <div className="text-sm text-black">
+            <div className="text-sm text-black text-center">
               © {currentYear} Stacy and Louise Realty Team. All rights reserved.
             </div>
           </div>

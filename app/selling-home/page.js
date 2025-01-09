@@ -161,12 +161,20 @@ const SellingPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="text-center py-8">
+        <section className="mt-16 text-center">
+          <div className="flex justify-center mb-3">
+            <img
+              className="w-full lg:w-auto h-auto max-w-md lg:max-w-lg xl:max-w-xl max-h-[200px]"
+              src="/stacy.png"
+              alt="Stacy Anastasiadis - Professional Portrait"
+            />
+          </div>
+          <p className="text-sm text-gray-700">Stacy and Louise Team</p>
           <Link
-            href="/contact"
-            className="inline-block bg-black text-white px-8 py-4 rounded-md font-semibold hover:bg-gray-800 transition-colors"
+            href="/appointment"
+            className="inline-block bg-black text-white px-8 py-3 rounded-md font-semibold hover:bg-gray-800 transition-colors"
           >
-            Schedule a Selling Consultation
+            Schedule a Consultation
           </Link>
         </section>
       </div>

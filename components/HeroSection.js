@@ -36,13 +36,10 @@ const HeroSection = () => {
         </div>
 
         <div className="relative lg:w-1/2 flex justify-center lg:justify-end">
-          <Image
-            className="w-full lg:w-auto h-auto max-w-md lg:max-w-lg xl:max-w-xl"
+          <img
+            className="w-full lg:w-auto h-auto max-w-md lg:max-w-lg xl:max-w-xl max-h-[700px]"
             src="/stacy.png"
             alt="Stacy Anastasiadis - Professional Portrait"
-            width={600}
-            height={800}
-            priority
           />
         </div>
       </div>

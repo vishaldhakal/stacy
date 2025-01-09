@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import MortgageCalculator from "@/components/MortgageCalculator";
+import RecentSales from "@/components/RecentSales";
 import PromoSection from "@/components/PromoSection";
 import Testimonials from "@/components/Testimonials";
 import Statistics from "@/components/Statistics";
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutTeam />
       <Statistics />
       <FirstTimeBuyers />
+      <RecentSales />
       <MortgageCalculator />
       <BlogSection />
       <PromoSection />
