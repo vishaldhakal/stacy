@@ -8,21 +8,15 @@ const PromoSection = () => {
         <div>
           <div className="grid grid-cols-1 gap-y-8 md:gap-y-12 md:grid-cols-2 md:gap-x-8 2xl:gap-x-20">
             <div className="flex flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 order-1 md:col-span-2">
-              <Image
+              <img
                 src="/stacy-image.png"
                 alt="Stacy Anastasiadis"
-                width={300}
-                height={400}
                 className="w-40 sm:w-56 md:w-72 lg:w-80 h-auto object-cover rounded-lg"
-                priority
               />
-              <Image
+              <img
                 src="/louise.png"
                 alt="Louise Anastasiadis"
-                width={300}
-                height={400}
                 className="w-40 sm:w-56 md:w-72 lg:w-80 h-auto object-cover rounded-lg shadow-md"
-                priority
               />
             </div>
             <div className="text-center py-6 sm:py-8 md:py-12 order-2 md:col-span-2 max-w-3xl mx-auto">

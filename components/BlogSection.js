@@ -48,10 +48,9 @@ const BlogCard = ({ post }) => {
   return (
     <div className="flex flex-col bg-white rounded-xl shadow-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 overflow-hidden border border-gray-100 mx-auto w-full">
       <div className="relative h-28 sm:h-48">
-        <Image
+        <img
           src={post.image}
           alt={post.title}
-          fill
           className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
         />
         <div className="absolute top-4 left-4">

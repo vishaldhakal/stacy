@@ -35,7 +35,6 @@ export default function Home() {
       </p>
       <ContactForm />
       <div className="my-20"></div>
-      <LondonInfo />
     </main>
   );
 }

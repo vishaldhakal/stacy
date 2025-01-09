@@ -40,7 +40,7 @@ const RecentSales = () => {
             </div>
 
             <div className="relative h-48 sm:h-56">
-              <Image
+              <img
                 src={sale.image}
                 alt={`Recent sale ${sale.id}`}
                 fill

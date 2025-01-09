@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const buyingSteps = [
@@ -95,11 +94,9 @@ const FirstTimeBuyers = () => {
           {/* Image Column - Moved to top for mobile */}
           <div className="lg:w-1/2 order-1 lg:order-2 w-full">
             <div className="relative flex justify-center items-center">
-              <Image
+              <img
                 src="/firsttime.png"
                 alt="Happy first-time home buyers receiving their keys"
-                width={400}
-                height={400}
                 className="rounded-lg shadow-lg object-cover w-full max-w-sm mx-auto"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent rounded-lg"></div>
