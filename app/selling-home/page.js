@@ -163,11 +163,7 @@ const SellingPage = () => {
         {/* CTA Section */}
         <section className="mt-16 text-center">
           <div className="flex justify-center mb-3">
-            <img
-              className="w-full lg:w-auto h-auto max-w-md lg:max-w-lg xl:max-w-xl max-h-[200px]"
-              src="/stacy.png"
-              alt="Stacy Anastasiadis - Professional Portrait"
-            />
+            <img src="/stacy.png" alt="logo" className="w-32 h-54" />
           </div>
           <p className="text-sm text-gray-700">Stacy and Louise Team</p>
           <Link

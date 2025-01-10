@@ -159,7 +159,7 @@ const BuyerPage = () => {
         <section className="mt-16 text-center">
           <div className="flex justify-center mb-3">
             <img
-              className="w-full lg:w-auto h-auto max-w-md lg:max-w-lg xl:max-w-xl max-h-[200px]"
+              className="w-24 h-53"
               src="/stacy.png"
               alt="Stacy Anastasiadis - Professional Portrait"
             />

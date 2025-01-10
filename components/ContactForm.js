@@ -19,7 +19,7 @@ export default function ContactForm() {
     <div className="max-w-[700px] mx-auto px-4 py-12 sm:py-16">
       <div className="text-center mb-5">
         <div className="flex justify-center">
-          <img src="/stacy.png" alt="logo" className="w-32 h-32" />
+          <img src="/stacy.png" alt="logo" className="w-32 h-54" />
         </div>
         <h2 className="text-5xl font-extrabold text-gray-900 sm:text-3xl lg:text-5xl text-center mt-4">
           Get in Touch
