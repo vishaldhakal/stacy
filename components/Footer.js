@@ -6,24 +6,21 @@ const Footer = () => {
 
   const footerLinks = {
     services: [
-      { label: "Buy a Home", href: "#" },
-      { label: "Sell a Home", href: "#" },
-      { label: "First Time Buyers", href: "#" },
-      { label: "Market Analysis", href: "#" },
-      { label: "Investment Properties", href: "#" },
+      { label: "Buy a Home", href: "/buying-home" },
+      { label: "Sell a Home", href: "/selling-home" },
+      { label: "First Time Buyers", href: "/#first-time-buyers" },
     ],
     resources: [
-      { label: "Mortgage Calculator", href: "#" },
-      { label: "Buyer's Guide", href: "#" },
-      { label: "Seller's Guide", href: "#" },
-      { label: "Market Reports", href: "#" },
+      { label: "Mortgage Calculator", href: "/mortgage-calculator" },
+      { label: "Buyer's Guide", href: "/buying-home" },
+      { label: "Seller's Guide", href: "/selling-home" },
     ],
     areas: [
-      { label: "Old North", href: "#" },
-      { label: "Byron", href: "#" },
-      { label: "Masonville", href: "#" },
-      { label: "Downtown London", href: "#" },
-      { label: "Westmount", href: "#" },
+      { label: "Old North", href: "/" },
+      { label: "Byron", href: "/" },
+      { label: "Masonville", href: "/" },
+      { label: "Downtown London", href: "/" },
+      { label: "Westmount", href: "/" },
     ],
   };
 
