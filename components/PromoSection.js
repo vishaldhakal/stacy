@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const PromoSection = () => {
   return (
-    <section className="py-6 sm:py-12 bg-amber-50 2xl:py-24 2xl:bg-white my-6 md:my-20">
-      <div className="px-4 mx-auto rounded-md bg-amber-50 max-w-7xl sm:px-6 lg:px-8">
+    <section className="py-6 sm:py-12  2xl:py-24 2xl:bg-white my-6 md:my-20">
+      <div className="px-4 mx-auto rounded-md max-w-7xl sm:px-6 lg:px-8">
         <div>
           <div className="grid grid-cols-1 gap-y-8 md:gap-y-12 md:grid-cols-2 md:gap-x-8 2xl:gap-x-20">
             <div className="flex flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 order-1 md:col-span-2">

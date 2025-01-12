@@ -8,9 +8,9 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Stacy Anastasiadis | London Real Estae Agent",
+  title: "Stacy and Louise Anastasiadis | London Real Estae Agent",
   description:
-    "Stacy Anastasiadis is a london-based real estate agent with over 20 years of experience specializing in residential sales, commercial investments, and vacant land. Serving London and surrounding areas with expertise and dedication.",
+    "Stacy and Louise Anastasiadis are london-based real estate agent.Together, we make your life easier and your transition seamless. Our combined experience in real estate and banking ensures you'll feel comfortable and confident throughout your real estate journey.",
 };
 
 export default function RootLayout({ children }) {
